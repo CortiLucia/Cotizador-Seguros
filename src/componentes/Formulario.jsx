@@ -1,29 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-let propiedades = [];
-let ubicaciones = [];
-
-async function cargarDatos() {
-  try {
-    const response = await fetch("https://654691f2fe036a2fa955d926.mockapi.io/propiedades");
-    propiedades = await response.json();
-  } catch (error) {
-    console.error(error);
-  }
-  try {
-    const response = await fetch("https://654691f2fe036a2fa955d926.mockapi.io/ubicaciones");
-    ubicaciones = await response.json();
-  } catch (error) {}
-}
-
-await cargarDatos();
 
 const Formulario = () => {
   const [metrosCuadrados, setMetrosCuadrados] = useState("");
   const [propiedad, setPropiedad] = useState("");
   const [ubicacion, setUbicacion] = useState("");
   const [resultado, setResultado] = useState(0);
+
+  const [ubicaciones, setUbicaciones] = useState([]);
+  const [propiedades, setPropiedades] = useState([]);
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      const responsePropiedades = await fetch("https://654691f2fe036a2fa955d926.mockapi.io/propiedades");
+      const propiedades = await responsePropiedades.json();
+      setPropiedades(propiedades);
+
+      const responseUbicaciones = await fetch("https://654691f2fe036a2fa955d926.mockapi.io/ubicaciones");
+      const ubicaciones = await responseUbicaciones.json();
+      setUbicaciones(ubicaciones);
+    };
+
+    fetchData();
+  }, []);
 
   function CotizarSeguro(ev) {
     ev.preventDefault();
