@@ -1,0 +1,47 @@
+[
+    {
+        "value": "CABA",
+        "label": "CABA",
+        "factor": 1.13
+    },
+    {
+        "value": "Tandil",
+        "label": "Tandil",
+        "factor": 1.04
+    },
+    {
+        "value": "Costa Atlántica",
+        "label": "Costa Atlántica",
+        "factor": 1.29
+    },
+    {
+        "value": "Patagonia",
+        "label": "Patagonia",
+        "factor": 1.00
+    },
+    {
+        "value": "Bariloche",
+        "label": "Bariloche",
+        "factor": 1.80
+    },
+    {
+        "value": "Bahia Blanca",
+        "label": "Bahia Blanca",
+        "factor": 1.54
+    },
+    {
+        "value": "Lujan de Cuyo",
+        "label": "Lujan de Cuyo",
+        "factor": 1.32
+    },
+    {
+        "value": "Carlos Paz",
+        "label": "Carlos Paz",
+        "factor": 1.65
+    },
+    {
+        "value": "Trelew",
+        "label": "Trelew",
+        "factor": 1.94
+    }
+]
