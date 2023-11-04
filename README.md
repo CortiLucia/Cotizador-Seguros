@@ -1,4 +1,4 @@
 # Hola a todos! 
 Acá les dejo el link para que vean el segundo proyecto integrador.
 Espero que les guste!
-[Click acá](https://cotizador-seguros-rose.vercel.app/cotizacion).
+[Click acá](https://cotizador-seguros-rose.vercel.app).
