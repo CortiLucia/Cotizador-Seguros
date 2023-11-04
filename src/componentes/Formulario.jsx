@@ -6,18 +6,18 @@ let ubicaciones = [];
 
 async function cargarDatos() {
   try {
-    const response = await fetch("./src/assets/propiedades.json");
+    const response = await fetch("https://654691f2fe036a2fa955d926.mockapi.io/propiedades");
     propiedades = await response.json();
   } catch (error) {
     console.error(error);
   }
   try {
-    const response = await fetch("./src/assets/ubicaciones.json");
+    const response = await fetch("https://654691f2fe036a2fa955d926.mockapi.io/ubicaciones");
     ubicaciones = await response.json();
   } catch (error) {}
 }
 
-cargarDatos();
+await cargarDatos();
 
 const Formulario = () => {
   const [metrosCuadrados, setMetrosCuadrados] = useState("");
@@ -50,7 +50,6 @@ const Formulario = () => {
       "cotizaciones",
       JSON.stringify(cotizacionesAnteriores)
     );
-    console.log(cotizacionesAnteriores);
   };
 
   return (
