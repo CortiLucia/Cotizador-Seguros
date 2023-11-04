@@ -1,0 +1,137 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+html {
+  min-height: 100%;
+  background-color: rgb(94, 145, 201);
+  text-align: center;
+}
+
+.header {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+form {
+  margin: auto;
+  max-width: 900px;
+  background-color: white;
+  padding: 10px;
+  border-color: whitesmoke;
+  box-shadow: 26px 28px 15px -8px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+
+form .columns {
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+select,
+input {
+  min-width: 50%;
+  width: 70%;
+  gap: 1rem;
+}
+
+.button-cotizar {
+  margin-top: 1rem;
+}
+
+.resultado {
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  gap: 2rem;
+}
+
+.button-cotizar,
+.button-guardar,
+.button-historial {
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.button-cotizar:hover,
+.button-guardar:hover,
+.button-historial:hover {
+  color: aliceblue;
+  background-color: rgba(94, 145, 201, 0.7);
+  transition: all 0.8s;
+  border-radius: 10px;
+}
+
+.tabla {
+  margin: auto;
+  max-width: 900px;
+  background-color: white;
+  padding: 10px;
+  border-color: whitesmoke;
+  box-shadow: 26px 28px 15px -8px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  display: block;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+td {
+  border-bottom: 0.1rem solid rgb(174, 174, 174);
+}
+
+th {
+  border-bottom: 0.1rem solid rgb(174, 174, 174);
+  padding: 1.2rem 1.5rem;
+}
+
+.button-eliminar {
+  font-size: 1rem;
+  color: brown;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.volver {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0.5rem;
+ }
+
+ .button-volver {
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+ }
+
+ .button-volver i {
+  color: rgb(94, 145, 201);
+ }
+
+

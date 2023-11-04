@@ -1,0 +1,57 @@
+[
+    {
+        "value": "Casa",
+        "label": "Casa",
+        "factor": 1.09
+    },
+    {
+        "value": "Departamento",
+        "label": "Departamento",
+        "factor": 1.02
+    },
+    {
+        "value": "P.H.",
+        "label": "P.H",
+        "factor": 1.05
+    },
+    {
+        "value": "Quinta",
+        "label": "Quinta",
+        "factor": 1.19
+    },
+    {
+        "value": "Garage",
+        "label": "Garage",
+        "factor": 1.92
+    },
+    {
+        "value": "Oficina",
+        "label": "Oficina",
+        "factor": 2.39
+    },
+    {
+        "value": "Local Comercial",
+        "label": "Local Comercial",
+        "factor": 1.41
+    },
+    {
+        "value": "Bodega / Galpon",
+        "label": "Bodega / Galpon",
+        "factor": 1.03
+    },
+    {
+        "value": "Deposito",
+        "label": "Deposito",
+        "factor": 1.92
+    },
+    {
+        "value": "Campo",
+        "label": "Campo",
+        "factor": 2.30
+    },
+    {
+        "value": "Terreno / Lote",
+        "label": "Terreno / Lote",
+        "factor": 1.80
+    }
+]
