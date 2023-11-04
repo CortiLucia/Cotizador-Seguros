@@ -1,20 +1,23 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 let propiedades = [];
 let ubicaciones = [];
 
-
-try {
-  const response = await fetch("./src/assets/propiedades.json");
-  propiedades = await response.json();
-} catch (error) {
-  console.error(error);
+async function cargarDatos() {
+  try {
+    const response = await fetch("./src/assets/propiedades.json");
+    propiedades = await response.json();
+  } catch (error) {
+    console.error(error);
+  }
+  try {
+    const response = await fetch("./src/assets/ubicaciones.json");
+    ubicaciones = await response.json();
+  } catch (error) {}
 }
-try {
-  const response = await fetch("./src/assets/ubicaciones.json");
-  ubicaciones = await response.json();
-} catch (error) {}
+
+cargarDatos();
 
 const Formulario = () => {
   const [metrosCuadrados, setMetrosCuadrados] = useState("");
